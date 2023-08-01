@@ -2,6 +2,7 @@
 use App\Http\Controllers\ExercicioUmController;
 use App\Http\Controllers\ExercicioDoisController;
 use App\Http\Controllers\ExercicioTresController;
+use App\Http\Controllers\ExercicioQuatroController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -24,4 +25,7 @@ Route::post('exercicio/dois',
 
 Route::post('exercicio/tres', 
 [ExercicioTresController::class, 'media']);
+
+Route::post('exercicio/quatro', 
+[ExercicioQuatroController::class, 'verificar']);
 
