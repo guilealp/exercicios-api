@@ -7,6 +7,7 @@ use App\Http\Controllers\ExercicioCincoController;
 use App\Http\Controllers\ExercicioseisController;
 use App\Http\Controllers\ExercicioSeteController;
 use App\Http\Controllers\ExercicioOitoController;
+use App\Http\Controllers\ExercicioNoveController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -44,3 +45,6 @@ Route::get('exercicio/sete',
 
 Route::post('exercicio/oito', 
 [ExercicioOitoController::class, 'exibirtabuada']);
+
+Route::post('exercicio/nove', 
+[ExercicioNoveController::class, 'exibirdivisivel']);
