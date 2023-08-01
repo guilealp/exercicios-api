@@ -4,6 +4,7 @@ use App\Http\Controllers\ExercicioDoisController;
 use App\Http\Controllers\ExercicioTresController;
 use App\Http\Controllers\ExercicioQuatroController;
 use App\Http\Controllers\ExercicioCincoController;
+use App\Http\Controllers\ExercicioseisController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -32,4 +33,7 @@ Route::post('exercicio/quatro',
 
 Route::post('exercicio/cinco', 
 [ExercicioCincoController::class, 'divisivelquatro']);
+
+Route::post('exercicio/seis', 
+[ExercicioseisController::class, 'idade']);
 
