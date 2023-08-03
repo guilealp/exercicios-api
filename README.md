@@ -23,6 +23,21 @@ Certifique-se de ter os seguintes requisitos atendidos antes de começar a traba
 ```
 cd exercicios-api
 ```
+3. Inicializar o repositorio
+```
+composer update
+```
+4. copiando o.env do exemplo
+```
+copy .env.example .env
+```
+5. Acessar o Visual Studio Code
+```
+code .
+```
+# insominia
+
+[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=exerc%C3%ADcios%20api%20&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fguilealp%2Fexercicios-api%2Fmain%2FInsomnia.json)
 
 ## Licença
 
