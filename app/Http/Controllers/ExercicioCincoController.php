@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ExercicioCincoFormRequest;
 use Illuminate\Http\Request;
 
 class ExercicioCincoController extends Controller
 {
 
-    public function divisivelquatro(Request $request){
+    public function divisivelquatro(ExercicioCincoFormRequest $request){
         if ($request -> numero % 4 == 0) {
             return json_encode([
                 'message' => "É divisivel por 4"

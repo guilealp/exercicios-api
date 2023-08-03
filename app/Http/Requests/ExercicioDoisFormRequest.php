@@ -6,14 +6,14 @@ use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Exceptions\HttpResponseException;
 
-class ExercicioUmFormRequest extends FormRequest
+class ExercicioDoisFormRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
      */
     public function authorize(): bool
     {
-        return true;
+        return false;
     }
 
     /**
@@ -24,8 +24,8 @@ class ExercicioUmFormRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'primeiro_numero' => 'required|numeric' ,
-            'segundo_numero' => 'required|numeric',
+            'primeira_entrada' => 'required|numeric' ,
+            'segunda_entrada' => 'required|numeric',
         ];
     }
     public function failedValidertion(Validator $validator){
@@ -38,10 +38,10 @@ class ExercicioUmFormRequest extends FormRequest
     public function messages()
     {
         return[
-            'primeiro_numero.required' => "Preencher o campo primeiro número",
-            'primeiro_numero.numeric' => "o campo é somente número",
-            'segundo_numero.required' => "Preencher o campo segundo número",
-            'segundo_numero.numeric' => "o campo é somente número",
+            'primeira_entrada.required' => "Preencher o campo primeiro número",
+            'primeira_entrada.numeric' => "o campo é somente número",
+            'segunda_entrada.required' => "Preencher o campo segundo número",
+            'segunda_entrada.numeric' => "o campo é somente número",
         ];
     }
 }

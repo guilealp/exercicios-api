@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ExercicioSeisFormRequest;
 use Illuminate\Http\Request;
 
 class ExercicioseisController extends Controller
 {
-    public function idade(Request $request)
+    public function idade(ExercicioSeisFormRequest $request)
     {
         if ($request->idade >= 12 && $request->idade <= 18) {
             return json_encode([

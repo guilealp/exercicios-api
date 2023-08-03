@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ExercicioNoveFormRequest;
 use Illuminate\Http\Request;
 
 class ExercicioNoveController extends Controller
 {
     
-    public function exibirdivisivel(Request $request)
+    public function exibirdivisivel(ExercicioNoveFormRequest $request)
     {
         $numeros = [];
 

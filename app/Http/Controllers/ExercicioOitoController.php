@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ExercicioOitoFormRequest;
 use Illuminate\Http\Request;
 
 class ExercicioOitoController extends Controller
 {
-    public function exibirtabuada(Request $request)
+    public function exibirtabuada(ExercicioOitoFormRequest $request)
     {
         $numeros = []; 
 

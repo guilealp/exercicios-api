@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ExercicioQuatroFormRequest;
 use Illuminate\Http\Request;
 
 class ExercicioQuatroController extends Controller
 {
 
-    public function verificar(Request $request){
+    public function verificar(ExercicioQuatroFormRequest $request){
         $entrada = $request ->Entrada; 
 
         if ($entrada % 2 == 0 ){
